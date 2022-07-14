@@ -234,7 +234,7 @@ line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--grey-color);
 }
-/* ----------------------------------------------------Портфолио Оверлей--------------------------------------------------------- */
+/***********************************************************************************************************************************Портфолио Оверлей**************************************************************************************************************************/
 .project-div {
 position: relative;
 overflow: hidden;
@@ -270,7 +270,7 @@ transition: transform var(--anim);
 .project-item:focus .project-desc {
 transform: translateY(0%);
 }
-/*-------------------------------------------------------------------------------------------------------------------------------*/
+/******************************************************************************************************************************************************************************************************************************************************************************/
 .section-title {
 font-weight: 700;
 font-size: 36px;
@@ -337,10 +337,47 @@ color: var(--accent-color);
 .margin-tel {
 margin-right: 0px;
 }
-
-.button {
+/*************************************************************************************************************************************** Кнопки по БЕМ **************************************************************************************************************************/
+.button-main {
 border: 1px solid transparenret;
+width: 200px;
+height: 50px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+font-family: inherit;
+cursor: pointer;
+
+color: var(--white-bg-color);
+background-color: var(--accent-color);
+box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+border-radius: 4px;
+border: 1px solid transparent;
+transition: background-color var(--anim), box-shadow var(--anim), border-radius var(--anim);
 }
+
+.button-main--hovered:hover,
+.button-main--hovered:focus {
+background-color: var(--accent-color-bg);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+
+.button-main--telegram::after {
+content: "";
+display: inline-block;
+width: 24px;
+height: 24px;
+    
+margin-left: 10px;
+vertical-align: middle;
+    
+background-image: url(../images/icons/telegram.svg);
+    
+}
+/*********************************************************************************************************************************************************************************************************************************************************************************/
 
 .button-margin {
 margin-right: 8px;
@@ -433,29 +470,6 @@ color: var(--white-bg-color);
 
 .main-hero, footer {
 background: var(--color-sidebar);
-}
-.hero-button {
-padding: 10px 32px;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.06em;
-color: var(--white-bg-color);
-font-family: inherit;
-cursor: pointer;
-background-color: var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: 1px solid transparent;
-
-transition: background-color var(--anim), box-shadow var(--anim), border-radius var(--anim);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-background-color: var(--accent-color-bg);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
 }
 
 .benefits-list {
@@ -608,45 +622,6 @@ border-color: var(--accent-color);
 margin-right: 12px;
 }
 
-.button-footer {
-display: inline-flex;
-padding: 9px 28px 9px 29px;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: var(--white-bg-color);
-font-family: inherit;
-cursor: pointer;
-background-color: var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: 1px solid transparent;
-    
-transition: background-color var(--anim), box-shadow var(--anim), border-radius var(--anim);
-}
-
-.button-footer:hover,
-.button-footer:focus {
-background-color: var(--accent-color-bg);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-}
-
-.button-footer::after {
-content: "";
-display: inline-block;
-width: 24px;
-height: 24px;
-margin-left: 10px;
-
-background-image: url(../images/icons/telegram.svg);
-
-}
-
-/* ***************************************************************************************** */
 .googlemaps {
 font-weight: 400;
 font-size: 14px;
@@ -995,32 +970,6 @@ text-decoration-line: underline;
 color: var(--accent-color);
 }
 
-.button-modal {
-display: inline-flex;
-align-items: center;
-text-align: center;
-padding: 9px 55px 9px 56px;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.06em;
-color: var(--white-bg-color);
-font-family: inherit;
-cursor: pointer;
-background-color: var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: 1px solid transparent;
-
-transition: background-color var(--anim), box-shadow var(--anim), border-radius var(--anim);
-}
-
-.button-modal:hover,
-.button-modal:focus {
-background-color: var(--accent-color-bg);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-}
 .policy  {
 display: flex;
 justify-content: center;

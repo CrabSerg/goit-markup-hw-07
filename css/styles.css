@@ -48,6 +48,10 @@ padding-right: 15px;
 width: 1200px;
 }
 
+.header__logo {
+margin-right: 93px;
+}
+/***********************************************************************Навигация***************************************************************************/
 .section-nav {
 border: 1px solid #ECECEC;
 
@@ -56,6 +60,90 @@ padding-top: 25px;
 padding-bottom: 25px;
 margin: auto;
 }
+
+.nav__list {
+margin-right: 305px;
+display: flex;
+}
+
+.nav__list .nav__item:not(:last-child) {
+margin-right: 50px;
+}
+.nav__bottom {
+padding: 32px 0 31px 0;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--black-color);
+
+transition: color var(--anim);
+}
+/***********************************************************Статическое подчеркивание (кнопки хедера)*****************************************************/
+.nav__bottom--curent-static {
+color: var(--accent-color);
+position: relative;
+}
+
+.nav__bottom--curent-static::after {
+content: "";
+position: absolute;
+bottom: -1px;
+left: 0;
+
+width: 100%;
+height: 4px;
+border-radius: 2px;
+display: inline-block;
+background-color: var(--accent-color);
+}
+/**********************************************************Подчеркивание ховер-фокус (кнопки хедера)********************************************************/
+.nav__bottom--curent {
+position: relative;
+}
+
+.nav__bottom--curent::after {
+content: "";
+position: absolute;
+bottom: -1px;
+left: 0;
+
+width: 100%;
+height: 4px;
+border-radius: 2px;
+display: inline-block;
+background-color: #FFFFFF;
+transition: background-color var(--anim);
+}
+
+.nav__bottom--curent:hover::after,
+.nav__bottom--curent:focus::after {
+background-color: var(--accent-color);
+}
+/**********************************************************************************************************************************************************/
+.address {
+display: flex;
+}
+
+.adress__link {
+display: flex;
+align-items: flex-end;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--grey-color);
+
+transition: color var(--anim);
+}
+
+
+
+
+
+
+
 
 .section-hero {
 padding-bottom: 200px;
@@ -132,9 +220,6 @@ padding-top: 94px;
 background-color: var(--bg-color-photo);
 }
 
-.logo-position {
-margin-right: 93px;
-}
 .address-mar {
 margin-bottom: 9px;
 }
@@ -146,21 +231,9 @@ margin-bottom: 50px;
 margin-bottom: 20px;
 }
 
-.nav__list {
-margin-right: 305px;
-display: flex;
-}
-
-.nav__list .nav__item:not(:last-child) {
-margin-right: 50px;
-}
 .nav-flex {
 display: flex;
 align-items: center;
-}
-
-.address {
-display: flex;
 }
 
 .btn-filter-port {
@@ -302,30 +375,6 @@ color: var(--black-color);
 .span-web-footer {
 color: var(--white-bg-color);
 }
-
-.nav__bottom {
-padding: 32px 0 31px 0;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--black-color);
-
-transition: color var(--anim);
-}
-
-.adress__link {
-display: flex;
-align-items: flex-end;
-
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--grey-color);
-
-transition: color var(--anim);
-}
 .nav-btn:hover,
 .nav-btn:focus,
 .adress__link:hover,
@@ -409,49 +458,6 @@ border-radius: 4px;
 border: 1px solid transparent;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/* --------------------------------------------Статическое подчеркивание (кнопки хедера)-------------------------------------------- */
-.nav__bottom--curent-static {
-    color: var(--accent-color);
-    position: relative;
-    }
-    
-    .nav__bottom--curent-static::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    display: inline-block;
-    background-color: var(--accent-color);
-    }
-
-/* --------------------------------------------Подчеркивание ховер-фокус (кнопки хедера)-------------------------------------------- */
-.nav__bottom--curent {
-position: relative;
-}
-
-.nav__bottom--curent::after {
-content: "";
-position: absolute;
-bottom: -1px;
-left: 0;
-
-width: 100%;
-height: 4px;
-border-radius: 2px;
-display: inline-block;
-background-color: #FFFFFF;
-transition: background-color var(--anim);
-}
-
-.nav__bottom--curent:hover::after,
-.nav__bottom--curent:focus::after {
-background-color: var(--accent-color);
-}
-/* --------------------------------------------------------------------------------------------------------------------------------- */
 .hero-caption {
 display: flex;
 justify-content: space-around;

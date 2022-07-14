@@ -147,12 +147,12 @@ margin-bottom: 50px;
 margin-bottom: 20px;
 }
 
-.nav-list {
+.nav__list {
 margin-right: 305px;
 display: flex;
 }
 
-.nav-list .nav-item:not(:last-child) {
+.nav__list .nav__item:not(:last-child) {
 margin-right: 50px;
 }
 .nav-flex {
@@ -297,14 +297,14 @@ color: var(--accent-color);
 margin-bottom: 20px;
 }
 
-.span-web {
+.logo__span {
 color: var(--black-color); 
 }
 .span-web-footer {
 color: var(--white-bg-color);
 }
 
-.nav-btn {
+.nav__bottom {
 padding: 32px 0 31px 0;
 font-weight: 500;
 font-size: 14px;
@@ -411,12 +411,12 @@ border: 1px solid transparent;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* --------------------------------------------Статическое подчеркивание (кнопки хедера)-------------------------------------------- */
-.curent-static {
+.nav__bottom--curent-static {
     color: var(--accent-color);
     position: relative;
     }
     
-    .curent-static::after {
+    .nav__bottom--curent-static::after {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -430,11 +430,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 
 /* --------------------------------------------Подчеркивание ховер-фокус (кнопки хедера)-------------------------------------------- */
-.curent {
+.nav__bottom--curent {
 position: relative;
 }
 
-.curent::after {
+.nav__bottom--curent::after {
 content: "";
 position: absolute;
 bottom: -1px;
@@ -448,8 +448,8 @@ background-color: #FFFFFF;
 transition: background-color var(--anim);
 }
 
-.curent:hover::after,
-.curent:focus::after {
+.nav__bottom--curent:hover::after,
+.nav__bottom--curent:focus::after {
 background-color: var(--accent-color);
 }
 /* --------------------------------------------------------------------------------------------------------------------------------- */
@@ -656,11 +656,11 @@ display: flex;
 justify-content: center;
 }
 
-.social-media-item:not(:last-child) {
+.social-media__item:not(:last-child) {
 margin-right: 10px;
 }
 
-.social-media-link {
+.social-media__link {
 display: flex;
 align-items: center;
 justify-content: center;
@@ -673,12 +673,12 @@ border-radius: 50%;
 transition: color var(--anim), background-color var(--anim);
 }
 
-.social-media-link:hover,
-.social-media-link:focus {
+.social-media__link:hover,
+.social-media__link:focus {
 color: var(--white-bg-color);
 background-color: var(--accent-color-bg);
 }
-.social-media-icon {
+.social-media__icon {
 fill: currentColor;
 }
 

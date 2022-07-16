@@ -32,10 +32,10 @@
   </head>
   <body>
     <header class="header">
-      <section class="section section-nav">
-        <div class="conteiner nav-flex">
+      <section class="header__section-nav section-nav">
+        <div class="header__conteiner conteiner header__conteiner--flex">
           <a class="header__logo logo link" href="./index.html">Web<span class="logo__span">Studio</span></a>
-          <nav class="nav">
+          <nav class="header__nav  nav">
             <ul class="nav__list list">
               <li class="nav__item">
                 <a class="nav__bottom nav__bottom--curent link" href="./index.html">Студия</a>
@@ -50,149 +50,144 @@
           </nav>
           <ul class="header__address address list">
             <li class="address__mail">
-              <a class="adress__link link mailtel-mail" href="mailto:info@devstudio.com"><svg class="icon" height="18"
-                  width="16">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg><span>info@devstudio.com</span></a>
+              <a class="adress__link link mailtel-mail" href="mailto:info@devstudio.com"><svg class="icon" height="18" width="16"><use href="./images/icons.svg#icon-mail"></use></svg><span>info@devstudio.com</span></a>
             </li>
             <li class="address__tel">
-              <a class="adress__link link margin-tel" href="tel:+380961111111"><svg class="icon" height="18" width="10">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg><span>+38 096 111 11 11</span></a>
+              <a class="adress__link link margin-tel" href="tel:+380961111111"><svg class="icon" height="18" width="10"><use href="./images/icons.svg#icon-smartphone"></use></svg><span>+38 096 111 11 11</span></a>
             </li>
           </ul>
         </div>
       </section>
     </header>
     <!--Основной контент-->
-    <main class="main-p">
+    <main class="main-portfolio">
       <!--Панель фильтров-->
-      <section class="section btn-filter-port">
-        <div class="conteiner">
+      <section class="main-portfolio__filter section">
+        <div class="main-portfolio__conteiner conteiner">
           <h1 hidden>Фильтр проектов</h1>
-          <ul class="filter-panel list">
-            <li class="button-margin">
-              <button class="button btn-port" type="button">Все</button>
+          <ul class="main-portfolio__list list">
+            <li class="main-portfolio__item">
+              <button class="button main-portfolio__button" type="button">Все</button>
             </li>
-            <li class="button-margin">
-              <button class="button btn-port" type="button">Веб-сайты</button>
+            <li class="main-portfolio__item">
+              <button class="button main-portfolio__button" type="button">Веб-сайты</button>
             </li>
-            <li class="button-margin">
-              <button class="button btn-port" type="button">Приложения</button>
+            <li class="main-portfolio__item">
+              <button class="button main-portfolio__button" type="button">Приложения</button>
             </li>
-            <li class="button-margin">
-              <button class="button btn-port" type="button">Дизайн</button>
+            <li class="main-portfolio__item">
+              <button class="button main-portfolio__button" type="button">Дизайн</button>
             </li>
             <li>
-              <button class="button btn-port" type="button">Маркетинг</button>
+              <button class="button main-portfolio__button" type="button">Маркетинг</button>
             </li>
           </ul>
           <h2 hidden>Проекты</h2>
-          <ul class="project-list list project-border">
-            <li class="project-item">
-              <div class="project-div">
-              <img class="image-p" src="./images/portfolio/tehnocrak.jpg" alt="Ноутбук с картинками" width="370" height="294"/>
-              <p class="project-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
+          <ul class="main-portfolio__project-list list">
+            <li class="main-portfolio__project-item">
+              <div class="main-portfolio__project-box">
+              <img class="main-portfolio__image" src="./images/portfolio/tehnocrak.jpg" alt="Ноутбук с картинками" width="370" height="294"/>
+              <p class="main-portfolio__project">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
               </div>
-              <div class="txt-allign">
-                <h2 class="project-namecompany list">Технокряк</h2>
-                <p class="project-class list">Веб-сайт</p>
+              <div class="main-portfolio__allign">
+                <h2 class="main-portfolio__namecompany list">Технокряк</h2>
+                <p class="main-portfolio__class list">Веб-сайт</p>
               </div>
             </li>
-            <li class="project-item">
-              <div class="project-div">
-              <img class="image-p" src="./images/portfolio/neworlean.jpg" alt="Два баскетболиста" width="370" height="294"/>
-              <p class="project-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
+            <li class="main-portfolio__project-item">
+              <div class="main-portfolio__project-box">
+              <img class="main-portfolio__image" src="./images/portfolio/neworlean.jpg" alt="Два баскетболиста" width="370" height="294"/>
+              <p class="main-portfolio__project">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
                </div>
-              <div class="txt-allign">
-                <h2 class="project-namecompany list">
+              <div class="main-portfolio__allign">
+                <h2 class="main-portfolio__namecompany list">
                   Постер <span lang="en">New Orlean vs Golden Star</span>
                 </h2>
-                <p class="project-class list">Дизайн</p>
+                <p class="main-portfolio__class list">Дизайн</p>
               </div>
             </li>
-            <li class="project-item">
-              <div class="project-div">
-              <img class="image-p" src="./images/portfolio/seafood.jpg" alt="Логотип с рыбой" width="370" height="294"/>
-              <p class="project-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
+            <li class="main-portfolio__project-item">
+              <div class="main-portfolio__project-box">
+              <img class="main-portfolio__image" src="./images/portfolio/seafood.jpg" alt="Логотип с рыбой" width="370" height="294"/>
+              <p class="main-portfolio__project">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
               </div>
-              <div class="txt-allign">
-                <h2 class="project-namecompany list">
+              <div class="main-portfolio__allign">
+                <h2 class="main-portfolio__namecompany list">
                   Ресторан <span lang="en">Seafood</span>
                 </h2>
-                <p class="project-class list">Приложение</p>
+                <p class="main-portfolio__class list">Приложение</p>
               </div>
             </li>
-            <li class="project-item">
-              <div class="project-div">
-              <img class="image-p" src="./images/portfolio/prime.jpg" alt="Наушники" width="370" height="294"/>
-              <p class="project-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
+            <li class="main-portfolio__project-item">
+              <div class="main-portfolio__project-box">
+              <img class="main-portfolio__image" src="./images/portfolio/prime.jpg" alt="Наушники" width="370" height="294"/>
+              <p class="main-portfolio__project">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
               </div>
-              <div class="txt-allign">
-                <h2 class="project-namecompany list">
+              <div class="main-portfolio__allign">
+                <h2 class="main-portfolio__namecompany list">
                   Проект <span lang="en">Prime</span>
                 </h2>
-                <p class="project-class list">Маркетинг</p>
+                <p class="main-portfolio__class list">Маркетинг</p>
               </div>
             </li>
-            <li class="project-item">
-              <div class="project-div">
-              <img class="image-p" src="./images/portfolio/boxes.jpg" alt="Коробки" width="370" height="294"/>
-              <p class="project-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
+            <li class="main-portfolio__project-item">
+              <div class="main-portfolio__project-box">
+              <img class="main-portfolio__image" src="./images/portfolio/boxes.jpg" alt="Коробки" width="370" height="294"/>
+              <p class="main-portfolio__project">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
              </div>
-              <div class="txt-allign">
-                <h2 class="project-namecompany list">
+              <div class="main-portfolio__allign">
+                <h2 class="main-portfolio__namecompany list">
                   Проект <span lang="en">Boxes</span>
                 </h2>
-                <p class="project-class list">Приложение</p>
+                <p class="main-portfolio__class list">Приложение</p>
               </div>
             </li>
-            <li class="project-item">
-              <div class="project-div">
-              <img class="image-p" src="./images/portfolio/borders.jpg" alt="Сайт на екране" width="370" height="294"/>
-              <p class="project-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
+            <li class="main-portfolio__project-item">
+              <div class="main-portfolio__project-box">
+              <img class="main-portfolio__image" src="./images/portfolio/borders.jpg" alt="Сайт на екране" width="370" height="294"/>
+              <p class="main-portfolio__project">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
               </div>
-              <div class="txt-allign">
-                <h2 class="project-namecompany list">
+              <div class="main-portfolio__allign">
+                <h2 class="main-portfolio__namecompany list">
                   <span lang="en">Inspiration has no Borders</span>
                 </h2>
-                <p class="project-class list">Веб-сайт</p>
+                <p class="main-portfolio__class list">Веб-сайт</p>
               </div>
             </li>
-            <li class="project-item">
-              <div class="project-div">
-              <img class="image-p" src="./images/portfolio/limitededition.jpg" alt="Открытая книга" width="370" height="294"/>
-              <p class="project-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
+            <li class="main-portfolio__project-item">
+              <div class="main-portfolio__project-box">
+              <img class="main-portfolio__image" src="./images/portfolio/limitededition.jpg" alt="Открытая книга" width="370" height="294"/>
+              <p class="main-portfolio__project">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
               </div>
-              <div class="txt-allign">
-                <h2 class="project-namecompany list">
+              <div class="main-portfolio__allign">
+                <h2 class="main-portfolio__namecompany list">
                   Издание <span lang="en">Limited Edition</span>
                 </h2>
-                <p class="project-class list">Дизайн</p>
+                <p class="main-portfolio__class list">Дизайн</p>
               </div>
             </li>
-            <li class="project-item">
-              <div class="project-div">
-              <img class="image-p" src="./images/portfolio/labeltag.jpg" alt="Бирка" width="370" height="294"/>
-              <p class="project-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
+            <li class="main-portfolio__project-item">
+              <div class="main-portfolio__project-box">
+              <img class="main-portfolio__image" src="./images/portfolio/labeltag.jpg" alt="Бирка" width="370" height="294"/>
+              <p class="main-portfolio__project">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
             </div>
-              <div class="txt-allign">
-                <h2 class="project-namecompany list">
+              <div class="main-portfolio__allign">
+                <h2 class="main-portfolio__namecompany list">
                   Проект <span lang="en">LAB</span>
                 </h2>
-                <p class="project-class list">Маркетинг</p>
+                <p class="main-portfolio__class list">Маркетинг</p>
               </div>
             </li>
-            <li class="project-item">
-              <div class="project-div">
-              <img class="image-p" src="./images/portfolio/growing.jpg" alt="Приложение на ноутбуке" width="370" height="294"/>
-              <p class="project-desc">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
+            <li class="main-portfolio__project-item">
+              <div class="main-portfolio__project-box">
+              <img class="main-portfolio__image" src="./images/portfolio/growing.jpg" alt="Приложение на ноутбуке" width="370" height="294"/>
+              <p class="main-portfolio__project">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведенья о компании или частном лице.</p>
             </div>              
-              <div class="txt-allign">
-                <h2 class="project-namecompany list">
+              <div class="main-portfolio__allign">
+                <h2 class="main-portfolio__namecompany list">
                   <span lang="en">Growing Business</span>
                 </h2>
-                <p class="project-class list">Приложение</p>
+                <p class="main-portfolio__class list">Приложение</p>
               </div>
             </li>
           </ul>

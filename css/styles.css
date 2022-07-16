@@ -420,7 +420,7 @@ margin-bottom: 20px;
 .logo__span {
 color: var(--black-color); 
 }
-.span-web-footer {
+.footer__span-logo {
 color: var(--white-bg-color);
 }
 .nav-btn:hover,
@@ -609,14 +609,14 @@ margin-left: 70px;
 
 /*************************************Форма футер*********************************************/
 
-.conteiner-form {
+.footer__join {
 margin-top: 12px;
 margin-left: 93px;
 max-width: 570px;
 max-height: 86px;
 }
 
-.form-txt {
+.footer__join-txt {
 padding-bottom: 20px;
 margin: 0;
 
@@ -628,11 +628,11 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 }
 
-.form-footer {
+.footer__form {
 display: inline-flex;
 }
 
-.form-footer-input {
+.footer__form-input {
 padding-left: 16px;
 
 width: 358px;
@@ -652,12 +652,12 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
-.form-footer-input:focus,
-.form-footer-input:focus-visible {
+.footer__form-input:focus,
+.footer__form-input:focus-visible {
 border-color: var(--accent-color);
 }
 
-.label-footer {
+.footer__label {
 margin-right: 12px;
 }
 
@@ -975,7 +975,6 @@ outline: transparent;
 }
 
 
-
 .form__icon-man {
 transform: translate(12%, 12%);
 }
@@ -1041,7 +1040,7 @@ outline-offset: -2px;
 transition: outline-color var(--anim), background-color var(--anim);
 }
 
-.visually-hidden {
+.form__input-box--visually-hidden {
 position: absolute;
 white-space: nowrap;
 width: 1px;

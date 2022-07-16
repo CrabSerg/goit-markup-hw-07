@@ -58,7 +58,6 @@ border: 1px solid #ECECEC;
 padding: 0px;
 padding-top: 25px;
 padding-bottom: 25px;
-margin: auto;
 }
 
 .nav__list {
@@ -183,33 +182,31 @@ width: 696px;
 
 
 .benefits {
-margin: 0px;
 padding-top: 94px;
 padding-bottom: 94px;
 }
 
-.section-work {
+.work {
 padding-bottom: 94px;
-margin: 0px;
 }
 
-.work-list {
+.work__list {
 display: flex;
 }
 
-.work-items:last-child {
+.work__items:last-child {
 margin-right: 0px;
 }
 
-.work-items {
+.work__items {
 margin-right: 30px;
 }
 
-.img-wrapper {
+.work__card {
 position: relative;
 }
 
-.work-items-txt {
+.work__items-txt {
 background-color: rgba(47,48,58, 0.8);
 position: absolute;
 bottom: 0;
@@ -245,15 +242,42 @@ background-color: var(--bg-color-photo);
 .address-mar {
 margin-bottom: 9px;
 }
-.h2-margin {
+/* **********************************************************************************************Чтто то сделать с дублями***************************************************************************************************************** */
+.work__headline {
 margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
 }
 
+.team__headline {
+margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.clients__headline  {
+margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+}
+/* *********************************************************************************************************************************************************************************************************************************** */
 .img-p {
 margin-bottom: 20px;
 }
 
-.nav-flex {
+.header__conteiner--flex {
 display: flex;
 align-items: center;
 }
@@ -365,13 +389,6 @@ transition: transform var(--anim);
 transform: translateY(0%);
 }
 /******************************************************************************************************************************************************************************************************************************************************************************/
-.section-title {
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
-}
 
 .header-box {
 margin-right: auto;
@@ -485,10 +502,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 background: var(--color-sidebar);
 }
 
-.benefits-list {
+.benefits__list {
 display: flex;
 }
-.benefits-item {
+.benefits__item {
 width:270px;
 }
 
@@ -499,11 +516,11 @@ border-left: 1px solid #ECECEC;
 border-right: 1px solid #ECECEC;
 }
 
-.benefits-list .benefits-item:not(:last-child) {
+.benefits__list .benefits__item:not(:last-child) {
 margin-right: 30px;
 }
 
-.benefits-caption {
+.benefits__caption {
 margin-bottom: 10px;
 font-weight: 700;
 font-size: 14px;
@@ -513,7 +530,7 @@ text-transform: uppercase;
 color: var(--black-color);
 
 }
-.benefits-subtitle {
+.benefits__subtitle {
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -541,7 +558,7 @@ border-radius: 0px 0px 4px 4px;
 margin-right: 0px;
 }
 
-.comand-name {
+.team__comand {
 padding-top: 30px;
 padding-bottom: 30px;
 }
@@ -725,7 +742,7 @@ background-color: var(--accent-color-bg);
 fill: currentColor;
 }
 
-.conteiner-clients  {
+.clients__box  {
 padding-top: 94px;
 }
 .clients-list {
@@ -765,7 +782,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.benefits-svg  {
+.benefits__svg  {
 margin-bottom: 30px;
 width: 270px;
 height: 120px;
@@ -856,23 +873,23 @@ transition: fill var(--anim);
 textarea {
 resize: none;
 }
-.form-modal-input {
+.form__input {
 transition: fill var(--anim);
 transition: border-color var(--anim);
 }
-.form-modal-input:focus,
-.form-modal-input:hover {
+.form__input:focus,
+.form__input:hover {
 border-color: var(--accent-color-bg);
 transition: border-color var(--anim);
 }
 
-.form-modal-input:focus + svg,
-.form-modal-input:hover + svg {
+.form__input:focus + svg,
+.form__input:hover + svg {
 fill: var(--accent-color);
 transition: fill var(--anim);
 }
 
-.form-modal-input::placeholder {
+.form__input::placeholder {
 color: rgba(117, 117, 117, 0.5);
 }
 .form__list {
@@ -907,7 +924,7 @@ color: var(--grey-color);
 position: relative;
 display: flex;
 }
-.svg-modal {
+.form__svg {
 position: absolute;
 margin: 11px 12px;
 }
@@ -941,15 +958,15 @@ outline: transparent;
 
 
 
-.use-icon-man {
+.form__icon-man {
 transform: translate(12%, 12%);
 }
 
-.use-icon-handset {
+.form__icon-handset {
 transform: translate(13%, 13%);
 }
 
-.use-icon-mailbc {
+.form__icon-mailbc {
 transform: translate(15%, 12%);
 }
 .form__box {
@@ -959,16 +976,16 @@ justify-content: center;
 align-items: center;
 }
 
-.input-box {
+.form__input-box {
 margin-right: 8px;
 }
 
-.input-box:checked + .form__check {
+.form__input-box:checked + .form__check {
 background-color: var(--accent-color);
 outline: 2px solid var(--accent-color);
 }
 
-.policy-p {
+.form__policy {
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71px;
@@ -978,7 +995,7 @@ letter-spacing: 0.03em;
 color: var(--grey-color);
 }
 
-.policy-span {
+.form__policy-span {
 text-decoration-line: underline;
 color: var(--accent-color);
 }
@@ -1019,6 +1036,6 @@ clip-path: inset(50%);
 margin: -1px;
 }
 
-.pollicy-div {
+.form__pollicy {
 margin-bottom: 20px;
 }

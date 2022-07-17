@@ -48,24 +48,50 @@ padding-left: 15px;
 padding-right: 15px;
 width: 1200px;
 }
+/* ********************************************************Все по логотипу***************************************************** */
+.logo {
+font-family: var(--secondary-font);
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--accent-color);
+}
+   
+.logo__span {
+color: var(--black-color); 
+}
+.footer__span-logo {
+color: var(--white-bg-color);
+}
 
 .header__logo {
 display: block;
 margin-right: 93px;
 }
 
+.footer__logo--bottom {
+display: block;
+margin-bottom: 20px;
+}
+
 .header__address {
 display: flex  
 }
-/***********************************************************************Навигация***************************************************************************/
+
+.header__conteiner--flex {
+display: flex;
+align-items: center;
+}
+
 .header__section-nav {
 border: 1px solid #ECECEC;
-
+    
 padding: 0px;
 padding-top: 25px;
 padding-bottom: 25px;  
 }
-
+/***********************************************************************Навигация***************************************************************************/
 .nav__list {
 display: flex;
 margin-right: 305px;
@@ -84,7 +110,7 @@ color: var(--black-color);
 
 transition: color var(--anim);
 }
-/***********************************************************Статическое подчеркивание (кнопки хедера)*****************************************************/
+                                                      /*Статическое подчеркивание (кнопки хедера-навигации)*/
 .nav__bottom--curent-static {
 color: var(--accent-color);
 position: relative;
@@ -102,7 +128,7 @@ border-radius: 2px;
 display: inline-block;
 background-color: var(--accent-color);
 }
-/**********************************************************Подчеркивание ховер-фокус (кнопки хедера)********************************************************/
+/**********************************************************Подчеркивание ховер-фокус (кнопки хедера-навигации)********************************************************/
 .nav__bottom--curent {
 position: relative;
 }
@@ -117,7 +143,7 @@ width: 100%;
 height: 4px;
 border-radius: 2px;
 display: inline-block;
-background-color: #FFFFFF;
+background-color: var(--white-bg-color);
 transition: background-color var(--anim);
 }
 
@@ -262,12 +288,7 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 }
-/* *********************************************************************************************************************************************************************************************************************************** */
-.header__conteiner--flex {
-display: flex;
-align-items: center;
-}
-
+/* ************************************************************************************************************************************************************************************************************************* */
 .main-portfolio__filter {
 padding-top: 94px;
 padding-bottom: 94px;
@@ -368,26 +389,6 @@ transition: transform var(--anim);
 transform: translateY(0%);
 }
 /*******************************************************************************************************************************************************************************************************************************************/
-.logo {
-font-family: var(--secondary-font);
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: var(--accent-color);
-}
-
-.footer__logo--bottom {
-display: block;
-margin-bottom: 20px;
-}
-
-.logo__span {
-color: var(--black-color); 
-}
-.footer__span-logo {
-color: var(--white-bg-color);
-}
 .nav-btn:hover,
 .nav-btn:focus,
 .adress__link:hover,

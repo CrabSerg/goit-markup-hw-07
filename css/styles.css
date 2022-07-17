@@ -203,7 +203,6 @@ color: var(--white-bg-color);
 .hero__text {
 width: 696px;
 }
-
 /************************************************************************ Преимущества ***************************************************************************/
 .benefits {
 padding-top: 94px;
@@ -289,7 +288,6 @@ align-items: center;
 height: 70px;
 width: 100%;
 
-font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;

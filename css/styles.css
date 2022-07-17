@@ -61,18 +61,10 @@ color: var(--accent-color);
 .logo__span {
 color: var(--black-color); 
 }
-.footer__span-logo {
-color: var(--white-bg-color);
-}
 
 .header__logo {
 display: block;
 margin-right: 93px;
-}
-
-.footer__logo--bottom {
-display: block;
-margin-bottom: 20px;
 }
 
 .header__address {
@@ -171,9 +163,6 @@ transition: color var(--anim);
 margin-right: 30px;
 }
 
-.footer__address {
-margin-bottom: 9px;
-}
 /**********************************************************************Герой********************************************************************************/
 .hero {
 padding-bottom: 200px;
@@ -204,17 +193,65 @@ color: var(--white-bg-color);
 width: 696px;
 }
 /* ******************************************************************************************************************************** */
-.clients {
-padding-top: 94px;
-}
-    
+/************************************************************************Преимущества**********************************************/
 .benefits {
 padding-top: 94px;
 padding-bottom: 94px;
 }
 
+.benefits__list {
+display: flex;
+}
+
+.benefits__item {
+width: 270px;
+}
+
+.benefits__list .benefits__item:not(:last-child) {
+margin-right: 30px;
+}
+
+.benefits__svg  {
+margin-bottom: 30px;
+width: 270px;
+height: 120px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #F5F4FA;
+border-radius: 4px;
+}
+
+.benefits__caption {
+margin-bottom: 10px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--black-color);
+
+}
+.benefits__subtitle {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--grey-color);
+}
+/************************************************************************Работа*******************************************************/
 .work {
 padding-bottom: 94px;
+}
+
+.work__headline {
+margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
 }
 
 .work__list {
@@ -251,25 +288,10 @@ text-transform: uppercase;
     
 color: var(--white-bg-color);
 }
-
+/************************************************************************Команда*******************************************************/
 .team {
 padding-top: 94px;
 background-color: var(--bg-color-photo);
-}
-
-.team__list {
-display: flex;
-padding-bottom: 94px;
-}
-/* **********************************************************************************************Чтто то сделать с дублями***************************************************************************************************************** */
-.work__headline {
-margin-bottom: 50px;
-
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
 }
 
 .team__headline {
@@ -282,6 +304,83 @@ text-align: center;
 letter-spacing: 0.03em;
 }
 
+.team__list {
+display: flex;
+padding-bottom: 94px;
+}
+
+.team__item {
+margin-right: 30px;
+
+width: 270px;
+top: 1635px;
+background: var(--white-bg-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team__item:last-child {
+margin-right: 0px;
+}
+
+.team__comand {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.team__name {
+margin-bottom: 10px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--black-color);
+background-color: var(--white-bg-color);
+}
+
+.team__job {
+margin-bottom: 16px;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--grey-color)
+}
+
+.team__social-media  {
+display: flex;
+justify-content: center;
+}
+/*                                                                   Социальные сети                                                */
+.social-media__link {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+color: var(--grey-color-icon);
+background-color: var(--white-bg-color);
+border-radius: 50%;
+
+transition: color var(--anim), background-color var(--anim);
+}
+
+.social-media__link:hover,
+.social-media__link:focus {
+color: var(--white-bg-color);
+background-color: var(--accent-color-bg);
+}
+
+.social-media__icon {
+fill: currentColor;
+}
+/*********************************************************************Клиенты***********************************************************/
+.clients {
+padding-top: 94px;
+}
+
 .clients__headline  {
 margin-bottom: 50px;
 
@@ -291,13 +390,239 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 }
+
+.clients__list {
+display: flex;
+justify-content: center;
+padding-bottom: 94px;
+}
+
+.clients__card:not(:last-child) {
+margin-right: 30px;
+}
+
+.clients__card-list {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 170px;
+height: 92px;
+color: var(--grey-color-icon);
+border: 1px solid var(--grey-color-icon);
+border-radius: 4px;
+transition: color var(--anim), border var(--anim);
+}
+
+.card-list--hover:hover,
+.card-list--hover:focus  {
+color: var(--accent-color);
+border: 1px solid var(--accent-color);
+}
+/******************************************************************Футер************************************************************/
+.footer {
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+.footer__conteiner {
+display: flex;
+}
+
+.footer__logo--bottom {
+display: block;
+margin-bottom: 20px;
+}
+
+.footer__span-logo {
+color: var(--white-bg-color);
+}
+
+.footer__address {
+margin-bottom: 9px;
+}
+
+.address__googlemaps {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--white-bg-color);
+font-style: normal;
+}
+
+.footer__item {
+margin-bottom: 9px;
+}
+
+.footer__contacts {
+text-decoration: none;
+}
+
+.footer__social {
+margin-top: 12px;
+margin-left: 70px;
+}
+
+.footer__join {
+margin:0;
+padding-bottom: 20px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white-bg-color);
+}
+
+.footer__social-list  {
+display: flex;
+justify-content: center;
+}
+
+.footer__social-item:not(:last-child) {
+margin-right: 10px;
+}
+
+.footer__social-link {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+color: var(--white-bg-color);
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+
+transition: color var(--anim), background-color var(--anim);
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus {
+color: var(--white-bg-color);
+background-color: var(--accent-color-bg);
+}
+
+.footer__social-icon {
+fill: currentColor;
+}
+
+/****************************************************************************************************************Форма футер**********************************************************************************************************************/
+.footer__subscribe {
+margin-top: 12px;
+margin-left: 93px;
+max-width: 570px;
+max-height: 86px;
+}
+    
+.footer__subscribe-txt {
+padding-bottom: 20px;
+margin: 0;
+    
+color: var(--white-bg-color);
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+    
+.footer__form {
+display: inline-flex;
+}
+    
+.footer__label {
+margin-right: 12px;
+}
+
+.footer__form-input {
+padding-left: 16px;
+    
+width: 358px;
+height: 50px;
+left: 815px;
+top: 2787px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: var(--color-sidebar);
+outline: none;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+    
+color: rgba(255, 255, 255, 0.6);
+}
+    
+.footer__form-input:focus,
+.footer__form-input:focus-visible {
+border-color: var(--accent-color);
+}
+    
+    
+.footer__list .footer__contacts {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color:rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ************************************************************************************************************************************************************************************************************************* */
-.main-portfolio__filter {
+.portfolio__filter {
 padding-top: 94px;
 padding-bottom: 94px;
 }
 
-.main-portfolio__list {
+.portfolio__list {
 margin-bottom: 50px;
 margin-left: auto;
 margin-right: auto;
@@ -307,16 +632,16 @@ display: flex;
 justify-content: center;
 }
 
-.main-portfolio__project-list {
+.portfolio__project-list {
 display: flex;
 flex-wrap: wrap;
 }
 
-.main-portfolio__project-item:last-child {
+.portfolio__project-item:last-child {
 margin-right: 0px;
 }
 
-.main-portfolio__project-item {
+.portfolio__project-item {
 width: 370px;
 margin-right: 30px;
 margin-bottom: 30px;
@@ -327,19 +652,19 @@ background: var(--white-bg-color);
 transition: box-shadow var(--anim);
 }
 
-.main-portfolio__project-item:nth-child(3n) {
+.portfolio__project-item:nth-child(3n) {
 margin-right: 0px;
 }
 
-.main-portfolio__project-item:nth-last-child(-n + 3) {
+.portfolio__project-item:nth-last-child(-n + 3) {
 margin-bottom: 0px;
 }
-.main-portfolio__project-item:hover,
-.main-portfolio__project-item:focus {
+.portfolio__project-item:hover,
+.portfolio__project-item:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.main-portfolio__namecompany {
+.portfolio__namecompany {
 margin-bottom: 4px;
 font-weight: 700;
 font-size: 18px;
@@ -348,7 +673,7 @@ letter-spacing: 0.06em;
 color: var(--black-color);
 }
     
-.main-portfolio__class {
+.portfolio__class {
 font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
@@ -356,12 +681,12 @@ letter-spacing: 0.03em;
 color: var(--grey-color);
 }
 /***********************************************************************************************************************************Портфолио Оверлей**********************************************************************************************/
-.main-portfolio__project-box {
+.portfolio__project-box {
 position: relative;
 overflow: hidden;
 }
 
-.main-portfolio__project {
+.portfolio__project {
 position: absolute;
 
 top: 0;
@@ -387,8 +712,8 @@ letter-spacing: 0.03em;
 transition: transform var(--anim);
 }
 
-.main-portfolio__project-item:hover .main-portfolio__project,
-.main-portfolio__project-item:focus .main-portfolio__project {
+.portfolio__project-item:hover .portfolio__project,
+.portfolio__project-item:focus .portfolio__project {
 transform: translateY(0%);
 }
 /*******************************************************************************************************************************************************************************************************************************************/
@@ -442,11 +767,11 @@ vertical-align: middle;
 background-image: url(../images/icons/telegram.svg);
 }
 /*********************************************************************************************************************************************************************************************************************************************/
-.main-portfolio__item {
+.portfolio__item {
 margin-right: 8px;
 }
 
-.main-portfolio__button {
+.portfolio__button {
 display: flex;
 text-align: center;
 
@@ -465,8 +790,8 @@ background-color: var(--bg-color-photo);
 
 transition: color var(--anim), background-color var(--anim), border-radius var(--anim), border var(--anim), box-shadow var(--anim);
 }
-.main-portfolio__button:hover,
-.main-portfolio__button:focus {
+.portfolio__button:hover,
+.portfolio__button:focus {
 color: var(--white-bg-color);
 background-color: var(--accent-color);
 border-radius: 4px;
@@ -478,305 +803,35 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 background: var(--color-sidebar);
 }
 
-.benefits__list {
-display: flex;
-}
 .benefits__item {
 width: 270px;
 }
 
-.main-portfolio__allign {
+.portfolio__allign {
 padding: 20px 24px;
 border-bottom: 1px solid #ECECEC;
 border-left: 1px solid #ECECEC;
 border-right: 1px solid #ECECEC;
 }
 
-.benefits__list .benefits__item:not(:last-child) {
-margin-right: 30px;
-}
-
-.benefits__caption {
-margin-bottom: 10px;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--black-color);
-
-}
-.benefits__subtitle {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--grey-color);
-}
-
-.image, .main-portfolio__image {
+.image, .portfolio__image {
 display: block;
 max-width: 100%;
 height: auto;
-}
-
-.team__item {
-margin-right: 30px;
-
-width: 270px;
-top: 1635px;
-background: var(--white-bg-color);
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-}
-
-.team__item:last-child {
-margin-right: 0px;
-}
-
-.team__comand {
-padding-top: 30px;
-padding-bottom: 30px;
-}
-
-.team__name {
-margin-bottom: 10px;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--black-color);
-background-color: var(--white-bg-color);
-}
-
-.team__job {
-margin-bottom: 16px;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--grey-color)
-}
-
-.footer {
-padding-top: 60px;
-padding-bottom: 60px;
-}
-
-.footer__conteiner {
-display: flex;
-}
-
-.footer__social {
-margin-top: 12px;
-margin-left: 70px;
-}
-/****************************************************************************************************************Форма футер**********************************************************************************************************************/
-.footer__join {
-margin-top: 12px;
-margin-left: 93px;
-max-width: 570px;
-max-height: 86px;
-}
-
-.footer__join-txt {
-padding-bottom: 20px;
-margin: 0;
-
-color: var(--white-bg-color);
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-}
-
-.footer__form {
-display: inline-flex;
-}
-
-.footer__form-input {
-padding-left: 16px;
-
-width: 358px;
-height: 50px;
-left: 815px;
-top: 2787px;
-border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-background-color: var(--color-sidebar);
-outline: none;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
-
-color: rgba(255, 255, 255, 0.6);
-}
-
-.footer__form-input:focus,
-.footer__form-input:focus-visible {
-border-color: var(--accent-color);
-}
-
-.footer__label {
-margin-right: 12px;
-}
-
-.address__googlemaps {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--white-bg-color);
-font-style: normal;
-}
-
-
-.footer__item {
-margin-bottom: 9px;
-}
-.footer__list .footer__contacts {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color:rgba(255, 255, 255, 0.6);
-}
-
-.footer__contacts {
-text-decoration: none;
-}
-
-.footer-join {
-margin:0;
-padding-bottom: 20px;
-
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--white-bg-color);
-}
-
-.team__social-media  {
-display: flex;
-justify-content: center;
 }
 
 .social-media__item:not(:last-child) {
 margin-right: 10px;
 }
 
-.social-media__link {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 44px;
-height: 44px;
-color: var(--grey-color-icon);
-background-color: var(--white-bg-color);
-border-radius: 50%;
-
-transition: color var(--anim), background-color var(--anim);
-}
-
-.social-media__link:hover,
-.social-media__link:focus {
-color: var(--white-bg-color);
-background-color: var(--accent-color-bg);
-}
-.social-media__icon {
-fill: currentColor;
-}
-
-.footer__social-item:not(:last-child) {
-margin-right: 10px;
-}
-
-.footer__social-list  {
-display: flex;
-justify-content: center;
-}
-
-.footer__social-link {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 44px;
-height: 44px;
-color: var(--white-bg-color);
-background-color: rgba(255, 255, 255, 0.1);
-border-radius: 50%;
-
-transition: color var(--anim), background-color var(--anim);
-}
-.footer__social-link:hover,
-.footer__social-link:focus {
-color: var(--white-bg-color);
-background-color: var(--accent-color-bg);
-}
-.footer__social-icon {
-fill: currentColor;
-}
-
-.clients__list {
-display: flex;
-justify-content: center;
-padding-bottom: 94px;
-}
-
-.clients__card:not(:last-child) {
-margin-right: 30px;
-}
-
-.clients__card-list {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 170px;
-height: 92px;
-color: var(--grey-color-icon);
-border: 1px solid var(--grey-color-icon);
-border-radius: 4px;
-transition: color var(--anim), border var(--anim);
-}
-
-.card-list--hover:hover,
-.card-list--hover:focus  {
-color: var(--accent-color);
-border: 1px solid var(--accent-color);
-}
-
 .social-clients-icon {
 fill: currentColor;
 } 
-
-.benefits__svg  {
-margin-bottom: 30px;
-width: 270px;
-height: 120px;
-display: flex;
-align-items: center;
-justify-content: center;
-background: #F5F4FA;
-border-radius: 4px;
-}
-
 .icon {
 margin-right: 10px;
 fill: currentColor;
 }
-
-
-
 /*-------------------------------------------------------------- Модальное окно----------------------------------------------------- */
-
 /*                                                   ****** Кнопка закрытия модалки ******                                                   */
 .backdrop-btn {
 position: fixed;
@@ -844,6 +899,20 @@ transition: fill var(--anim);
 fill: var(--accent-color);
 transition: fill var(--anim);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*                                            ****** Форма ******                                                                    */
 

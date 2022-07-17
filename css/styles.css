@@ -78,7 +78,9 @@ margin-bottom: 20px;
 .header__address {
 display: flex  
 }
-
+.header__address--last:not(:last-child) {
+margin-right: 30px;
+}
 .header__conteiner--flex {
 display: flex;
 align-items: center;
@@ -152,10 +154,6 @@ transition: background-color var(--anim);
 background-color: var(--accent-color);
 }
 /**********************************************************************************************************************************************************/
-.footer__address {
-margin-bottom: 9px;
-}
-
 .adress__link {
 display: flex;
 align-items: flex-end;
@@ -167,6 +165,14 @@ letter-spacing: 0.02em;
 color: var(--grey-color);
 
 transition: color var(--anim);
+}
+
+.adress__link--right {
+margin-right: 30px;
+}
+
+.footer__address {
+margin-bottom: 9px;
 }
 /**********************************************************************Герой********************************************************************************/
 .hero {
@@ -182,6 +188,7 @@ background-size: cover;
 .hero__caption {
 display: flex;
 justify-content: space-around;
+margin-bottom: 30px;
 
 font-weight: 900;
 font-size: 44px;
@@ -193,14 +200,10 @@ text-transform: uppercase;
 color: var(--white-bg-color);
 }
 
-.hero__caption {
-margin-bottom: 30px;
-}
-
 .hero__text {
 width: 696px;
 }
-
+/* ******************************************************************************************************************************** */
 .clients {
 padding-top: 94px;
 }
@@ -770,10 +773,11 @@ margin-right: 10px;
 fill: currentColor;
 }
 
-.mailtel-mail {
-margin-right: 30px;
-}
-/*------------------------------------------------ Модальное окно----------------------------------------------- */
+
+
+/*-------------------------------------------------------------- Модальное окно----------------------------------------------------- */
+
+/*                                                   ****** Кнопка закрытия модалки ******                                                   */
 .backdrop-btn {
 position: fixed;
 top: 0;
@@ -797,49 +801,85 @@ visibility: hidden;
 pointer-events: none ;
 transition: opacity var(--anim), visibility var(--anim);
 }
-
+/*                                                     ****** Модалка ******                                                        */
 .modal {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-
+    
 min-width: 528px;
 min-height: 581px;
 background-color: var(--white-bg-color);
 border-radius: 4px;
 }
-
+    
 .modal__close {
 position: absolute;
 top: 0;
 right: 0;
-
+    
 margin: 8px;
-
+    
 display: flex;
 align-items: center;
 justify-content: center;
-
+    
 width: 30px;
 height: 30px;
-  
+      
 background: var(--white-bg-color);
 border: none;
 padding: 0;
 border-radius: 30px;
 border: 1px solid rgba(0, 0, 0, 0.1);
-
+    
 transform: translate(0%, 0%);
 cursor: pointer;
 transition: fill var(--anim);
 }
-
+    
 .modal__close:hover,
 .modal__close:focus {
 fill: var(--accent-color);
 transition: fill var(--anim);
 }
+
+/*                                            ****** Форма ******                                                                    */
+
+.form__modal-txt {
+padding: 40px 40px 12px 40px;
+margin: 0;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+    
+color: var(--black-color);
+}
+
+.form__list {
+padding: 0px 39px 20px 41px;
+}
+
+.form__span, .form__span-comment {
+display: flex;
+
+margin-bottom: 4px;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+letter-spacing: 0.01em;
+color: var(--grey-color);
+}
+
+
+
+
+
+
 
 textarea {
 resize: none;
@@ -863,34 +903,6 @@ transition: fill var(--anim);
 
 .form__input::placeholder {
 color: rgba(117, 117, 117, 0.5);
-}
-
-.form__list {
-padding: 0px 39px 20px 41px;
-}
-
-.form__modal-txt {
-padding: 40px 40px 12px 40px;
-margin: 0;
-font-weight: 700;
-font-size: 20px;
-line-height: 23px;
-text-align: center;
-letter-spacing: 0.03em;
-    
-color: var(--black-color);
-}
-
-.form__span, .form__span-comment {
-display: flex;
-
-margin-bottom: 4px;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-
-letter-spacing: 0.01em;
-color: var(--grey-color);
 }
 
 .form__div {

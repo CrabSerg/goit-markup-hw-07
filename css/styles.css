@@ -875,14 +875,17 @@ letter-spacing: 0.01em;
 color: var(--grey-color);
 }
 
-
-
-
-
-
+.form__div {
+position: relative;
+display: flex;
+}
 
 textarea {
 resize: none;
+}
+
+.form__policy-box {
+margin-bottom: 20px;
 }
 
 .form__input {
@@ -905,10 +908,6 @@ transition: fill var(--anim);
 color: rgba(117, 117, 117, 0.5);
 }
 
-.form__div {
-position: relative;
-display: flex;
-}
 .form__svg {
 position: absolute;
 margin: 11px 12px;
@@ -1017,8 +1016,4 @@ padding: 0;
 clip: rect(0 0 0 0);
 clip-path: inset(50%);
 margin: -1px;
-}
-
-.form__pollicy {
-margin-bottom: 20px;
 }

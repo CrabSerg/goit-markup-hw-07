@@ -13,6 +13,7 @@
 --accent-color: #2196F3;
 /* Разное */
 --accent-color-bg: #188CE8;
+--accent-color-card: rgba(33, 150, 243, 0.9);
 --bg-color-photo: #F5F4FA;
 --color-sidebar: #2F303A;
 /* Анимации */
@@ -49,6 +50,7 @@ width: 1200px;
 }
 
 .header__logo {
+display: block;
 margin-right: 93px;
 }
 
@@ -56,17 +58,17 @@ margin-right: 93px;
 display: flex  
 }
 /***********************************************************************Навигация***************************************************************************/
-.section-nav {
+.header__section-nav {
 border: 1px solid #ECECEC;
 
 padding: 0px;
 padding-top: 25px;
-padding-bottom: 25px;
+padding-bottom: 25px;  
 }
 
 .nav__list {
-margin-right: 305px;
 display: flex;
+margin-right: 305px;
 }
 
 .nav__list .nav__item:not(:last-child) {
@@ -125,7 +127,6 @@ background-color: var(--accent-color);
 }
 /**********************************************************************************************************************************************************/
 .footer__address {
-display: flex;   
 margin-bottom: 9px;
 }
 
@@ -156,7 +157,6 @@ background-size: cover;
 display: flex;
 justify-content: space-around;
 
-margin-bottom: 30px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -165,6 +165,10 @@ align-items: center;
 text-align: center;
 text-transform: uppercase;
 color: var(--white-bg-color);
+}
+
+.hero__caption {
+margin-bottom: 30px;
 }
 
 .hero__text {
@@ -188,11 +192,7 @@ padding-bottom: 94px;
 display: flex;
 }
 
-.work__items:last-child {
-margin-right: 0px;
-}
-
-.work__items {
+.work__items--right:not(:last-child) {
 margin-right: 30px;
 }
 
@@ -204,7 +204,6 @@ position: relative;
 background-color: rgba(47,48,58, 0.8);
 position: absolute;
 bottom: 0;
-left: 0;
 margin: 0;
 display: flex;
 justify-content: center;
@@ -224,15 +223,15 @@ text-transform: uppercase;
 color: var(--white-bg-color);
 }
 
-.team__list {
-display: flex;
-padding-bottom: 94px;
-}
 .team {
 padding-top: 94px;
 background-color: var(--bg-color-photo);
 }
 
+.team__list {
+display: flex;
+padding-bottom: 94px;
+}
 /* **********************************************************************************************Чтто то сделать с дублями***************************************************************************************************************** */
 .work__headline {
 margin-bottom: 50px;
@@ -263,13 +262,7 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 }
-
-
 /* *********************************************************************************************************************************************************************************************************************************** */
-.img-p {
-margin-bottom: 20px;
-}
-
 .header__conteiner--flex {
 display: flex;
 align-items: center;
@@ -290,12 +283,6 @@ display: flex;
 justify-content: center;
 }
 
-.section-project {
-padding: 0px;
-margin-left: auto;
-margin-right: auto;
-}
-
 .main-portfolio__project-list {
 display: flex;
 flex-wrap: wrap;
@@ -306,7 +293,6 @@ margin-right: 0px;
 }
 
 .main-portfolio__project-item {
-
 width: 370px;
 margin-right: 30px;
 margin-bottom: 30px;
@@ -345,7 +331,7 @@ line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--grey-color);
 }
-/***********************************************************************************************************************************Портфолио Оверлей**************************************************************************************************************************/
+/***********************************************************************************************************************************Портфолио Оверлей**********************************************************************************************/
 .main-portfolio__project-box {
 position: relative;
 overflow: hidden;
@@ -369,7 +355,7 @@ width: 100%;
 height: 100%;
     
 color: var(--white-bg-color);
-background-color: rgba(33, 150, 243, 0.9); 
+background-color: var(--accent-color-card); 
 font-weight: 400;
 font-size: 18px;
 line-height: 1.56;
@@ -381,15 +367,8 @@ transition: transform var(--anim);
 .main-portfolio__project-item:focus .main-portfolio__project {
 transform: translateY(0%);
 }
-/******************************************************************************************************************************************************************************************************************************************************************************/
-
-.header-box {
-margin-right: auto;
-}
-
+/*******************************************************************************************************************************************************************************************************************************************/
 .logo {
-display: block;
-
 font-family: var(--secondary-font);
 font-weight: 700;
 font-size: 26px;
@@ -397,7 +376,9 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--accent-color);
 }
-.footer__logo {
+
+.footer__logo--bottom {
+display: block;
 margin-bottom: 20px;
 }
 
@@ -455,10 +436,8 @@ margin-left: 10px;
 vertical-align: middle;
     
 background-image: url(../images/icons/telegram.svg);
-    
 }
-/*********************************************************************************************************************************************************************************************************************************************************************************/
-
+/*********************************************************************************************************************************************************************************************************************************************/
 .main-portfolio__item {
 margin-right: 8px;
 }
@@ -499,7 +478,7 @@ background: var(--color-sidebar);
 display: flex;
 }
 .benefits__item {
-width:270px;
+width: 270px;
 }
 
 .main-portfolio__allign {
@@ -566,6 +545,7 @@ letter-spacing: 0.03em;
 color: var(--black-color);
 background-color: var(--white-bg-color);
 }
+
 .team__job {
 margin-bottom: 16px;
 font-weight: 400;
@@ -588,11 +568,8 @@ display: flex;
 .footer__social {
 margin-top: 12px;
 margin-left: 70px;
-
 }
-
-/*************************************Форма футер*********************************************/
-
+/****************************************************************************************************************Форма футер**********************************************************************************************************************/
 .footer__join {
 margin-top: 12px;
 margin-left: 93px;
@@ -680,7 +657,7 @@ font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--white-bg-color);
 }
 
 .team__social-media  {
@@ -744,9 +721,6 @@ background-color: var(--accent-color-bg);
 fill: currentColor;
 }
 
-.conteiner-clients  {
-padding-top: 94px;
-}
 .clients__list {
 display: flex;
 justify-content: center;
@@ -779,11 +753,6 @@ border: 1px solid var(--accent-color);
 fill: currentColor;
 } 
 
-.benefits-list-icon  {
-display: flex;
-align-items: center;
-justify-content: center;
-}
 .benefits__svg  {
 margin-bottom: 30px;
 width: 270px;
@@ -809,7 +778,6 @@ position: fixed;
 top: 0;
 left: 0;
 z-index: 1000;
-
 width: 100%;
 height: 100%;
 
@@ -822,7 +790,7 @@ pointer-events: initial;
 transition: opacity var(--anim), visibility var(--anim);
 }
 
-.backdrop-btn.is-hidden {
+.backdrop-btn.hidden {
 opacity: 0;
 visibility: hidden;
 pointer-events: none ;
@@ -875,6 +843,7 @@ transition: fill var(--anim);
 textarea {
 resize: none;
 }
+
 .form__input {
 transition: fill var(--anim);
 transition: border-color var(--anim);
@@ -894,6 +863,7 @@ transition: fill var(--anim);
 .form__input::placeholder {
 color: rgba(117, 117, 117, 0.5);
 }
+
 .form__list {
 padding: 0px 39px 20px 41px;
 }
@@ -907,7 +877,7 @@ line-height: 23px;
 text-align: center;
 letter-spacing: 0.03em;
     
-color: #212121;
+color: var(--black-color);
 }
 
 .form__span, .form__span-comment {
@@ -957,7 +927,6 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 outline: transparent;
 }
-
 
 .form__icon-man {
 transform: translate(12%, 12%);

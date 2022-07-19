@@ -70,15 +70,12 @@
   transition: background-color var(--anim), box-shadow var(--anim), border-radius var(--anim);
   transition: background-color var(--anim), box-shadow var(--anim), border-radius var(--anim), -webkit-box-shadow var(--anim);
 }
-
-.button--hovered:hover,
-.button--hovered:focus {
+.button--hovered:hover, .button--hovered:focus {
   background-color: var(--accent-color-bg);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
 .button--telegram::after {
   content: "";
   display: inline-block;
@@ -88,7 +85,6 @@
   vertical-align: middle;
   background-image: url(../images/icons/telegram.svg);
 }
-
 .button--portfolio {
   width: auto;
   height: auto;
@@ -99,9 +95,7 @@
   color: var(--black-color);
   background-color: var(--bg-color-photo);
 }
-
-.button--portfolio:hover,
-.button--portfolio:focus {
+.button--portfolio:hover, .button--portfolio:focus {
   color: var(--white-bg-color);
   background-color: var(--accent-color);
   border-radius: 4px;
@@ -155,18 +149,19 @@
   -webkit-transition: color var(--anim), background-color var(--anim);
   transition: color var(--anim), background-color var(--anim);
 }
-
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   color: var(--white-bg-color);
   background-color: var(--accent-color-bg);
 }
-
-.social__item:not(:last-child) {
-  margin-right: 10px;
+.social__link--background {
+  color: var(--white-bg-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social__icon {
+  fill: currentColor;
+}
+.social__icon--background {
   fill: currentColor;
 }
 
@@ -177,11 +172,6 @@
   margin-left: 70px;
 }
 
-.social__icon--background {
-  fill: currentColor;
-}
-
-.social__link--background {
-  color: var(--white-bg-color);
-  background-color: rgba(255, 255, 255, 0.1);
+.social__item:not(:last-child) {
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */

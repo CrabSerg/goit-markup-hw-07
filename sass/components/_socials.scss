@@ -10,13 +10,13 @@ border-radius: 50%;
 
 transition: color var(--anim), background-color var(--anim);
 
-.&:hover,
-.&:focus {
+&:hover,
+&:focus {
 color: var(--white-bg-color);
 background-color: var(--accent-color-bg);
 }
 
-.&--background {
+&--background {
 color: var(--white-bg-color);
 background-color: rgba(255, 255, 255, 0.1);
 }
@@ -26,7 +26,7 @@ background-color: rgba(255, 255, 255, 0.1);
 fill: currentColor;
 
 
-.&--background {
+&--background {
 fill: currentColor;
 }
 }
